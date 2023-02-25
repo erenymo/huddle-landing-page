@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+
+body {
+  max-height: 100vh;
+  background-image: url("../images/bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  padding: 5%;
+}
+
+/* logo */
+.logo-img {
+  margin-bottom: 7%;
+}
+
+/* middle container */
+.middle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* mock up */
+.mockups-div {
+  width: 112%;
+}
+
+.mockups-img {
+  width: 100%;
+}
+
+/* desc */
+.desc {
+  margin: 8% 0 8% 15%;
+}
+
+.desc-title {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.desc-p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin: 3% 15% 0 0;
+  font-weight: 400;
+  line-height: 1.8;
+  margin-bottom: 5%;
+}
+
+.register-btn {
+  color: hsl(257, 40%, 49%);
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 13px 50px;
+  border-radius: 25px;
+  box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+  color: white;
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+}
+
+/* bottom container */
+
+.bottom-container {
+  text-align: right;
+}
+
+.bottom-container a i {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.bottom-container a:not(:first-child) {
+  margin-left: 2rem;
+}
+
+.bottom-container a i::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  left: -12px;
+  bottom: -12px;
+}
+
+.bottom-container a:nth-child(2) {
+  margin-left: 2.4rem;
+}
+
+.bottom-container a:hover i {
+  color: hsl(300, 69%, 71%);
+}
+
+.bottom-container a i:hover::after {
+  border-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width: 991px) {
+  body {
+    margin: 0 5%;
+    background-image: url("../images/bg-mobile.svg");
+    background-size: contain;
+  }
+
+  .mockups-div {
+    padding: 20% 0;
+    width: 100%;
+  }
+
+  .desc {
+    margin: 8% 0;
+    text-align: center;
+  }
+
+  .desc-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .desc-p {
+    margin: 5% 0;
+    font-size: 2rem;
+  }
+
+  .register-btn {
+    width: 60%;
+    padding: 3% 0;
+    font-size: 1.5rem;
+    border-radius: 45px;
+  }
+
+  .bottom-container {
+    margin-top: 8%;
+    text-align: center;
+}
+}
